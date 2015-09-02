@@ -1,0 +1,44 @@
+header {
+	font-family: Courier New,arial;
+	padding: 1%;
+	height: 200px;
+}
+
+header h1{
+	font-size: 100px;
+	display: inline-block;
+	float: left;
+}
+
+header strong{
+	font-size: 50px;
+	float: left;
+	clear: left;
+}
+
+.projects li {
+	width: 20%;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: top;
+}
+.projects li a{
+		display: block;
+}
+.projects li img{
+	width: 100%;
+	display: block;
+}
+
+.projects li a .mask{
+	background: #000;
+	opacity: 0.7;
+	position: absolute;
+	display: none;
+}
+.projects li a:hover .mask{
+	display: block;
+}

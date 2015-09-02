@@ -1,0 +1,116 @@
+.arrow-lang, .check .item, .chevron.dark.left, .chevron.dark.right, .chevron.gold.bottom, .chevron.light.bottom, .chevron.light.left, .chevron.light.right, .circle.five, .circle.four, .circle.one, .circle.three, .circle.two, .download-article, .icon.building, .icon.email, .icon.house, .icon.pin, .icon.telephone, .logo, .logofooter, .picto.brokerage, .picto.consulting, .picto.download-analysis, .picto.download, .picto.formation, .picto.newsletter, .picto.star {
+    background: url("../img/skin/sprite.png") no-repeat;
+}
+
+.arrow-lang {
+    background-position: 0 0;
+}
+
+.check .item {
+    background-position: 0 -22px;
+}
+
+.chevron.dark.left {
+    background-position: 0 -50px;
+}
+
+.chevron.dark.right {
+    background-position: 0 -126px;
+}
+
+.chevron.gold.bottom {
+    background-position: 0 -202px;
+}
+
+.chevron.light.bottom {
+    background-position: 0 -252px;
+}
+
+.chevron.light.left {
+    background-position: 0 -302px;
+}
+
+.chevron.light.right {
+    background-position: 0 -378px;
+}
+
+.circle.five {
+    background-position: 0 -454px;
+}
+
+.circle.four {
+    background-position: 0 -684px;
+}
+
+.circle.one {
+    background-position: 0 -973px;
+}
+
+.circle.three {
+    background-position: 0 -1179px;
+}
+
+.circle.two {
+    background-position: 0 -1446px;
+}
+
+.download-article {
+    background-position: 0 -1713px;
+}
+
+.icon.building {
+    background-position: 0 -1760px;
+}
+
+.icon.email {
+    background-position: 0 -1791px;
+}
+
+.icon.house {
+    background-position: 0 -1874px;
+}
+
+.icon.pin {
+    background-position: 0 -1902px;
+}
+
+.icon.telephone {
+    background-position: 0 -1933px;
+}
+
+.logo {
+    background-position: 0 -2029px;
+}
+
+.logofooter {
+    background-position: 0 -2105px;
+}
+
+.picto.brokerage {
+    background-position: 0 -2216px;
+}
+
+.picto.consulting {
+    background-position: 0 -2312px;
+}
+
+.picto.download-analysis {
+    background-position: 0 -2410px;
+}
+
+.picto.download {
+    background-position: 0 -2457px;
+}
+
+.picto.formation {
+    background-position: 0 -2504px;
+}
+
+.picto.newsletter {
+    background-position: 0 -2600px;
+}
+
+.picto.star {
+    background-position: 0 -2650px;
+}
+
