@@ -1,0 +1,129 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* fonts stacks */
+/* breakpoints */
+/* colors */
+body {
+  font-family: Gudea, arial; }
+
+header {
+  height: 90px; }
+  header:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%; }
+  header .logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%; }
+    header .logo h1 {
+      font-family: "Old Standard TT", arial;
+      font-style: italic;
+      font-size: 36px;
+      line-height: 36px;
+      display: inline-block; }
+    header .logo strong {
+      font-family: Gudea, arial;
+      font-size: 18px;
+      line-height: 18px;
+      display: block; }
+  header nav.menu {
+    text-align: right;
+    display: inline-block;
+    width: 70%; }
+    header nav.menu ul {
+      display: inline-block;
+      vertical-align: middle; }
+      header nav.menu ul li {
+        display: inline-block;
+        padding: 0%; }
+        header nav.menu ul li a {
+          color: #111;
+          text-decoration: none; }
+          header nav.menu ul li a:hover {
+            text-decoration: underline; }
+
+.projects li {
+  width: 20%;
+  overflow: hidden;
+  display: inline-block;
+  opacity: 0;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: top; }
+  .projects li a {
+    display: block;
+    width: 100%;
+    height: 100%; }
+    .projects li a:hover .mask {
+      opacity: 0.7; }
+    .projects li a .mask {
+      background: #fff;
+      opacity: 0;
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: #000;
+      -webkit-transition: opacity 0.5s ease-in;
+      -moz-transition: opacity 0.5s ease-in;
+      -ms-transition: opacity 0.5s ease-in;
+      -o-transition: opacity 0.5s ease-in;
+      transition: opacity 0.5s ease-in; }
+      .projects li a .mask .inner {
+        padding: 10%; }
+        .projects li a .mask .inner strong {
+          display: inline-block;
+          min-height: 37px; }
+  .projects li img {
+    width: 100%;
+    display: block; }
+
+/*# sourceMappingURL=base.css.map */
