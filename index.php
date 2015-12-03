@@ -21,109 +21,110 @@
 	</header>
 	<section class="projects">
 		<ul>
-			<li>
+			<li class="grid-sizer">
+			<li class="item">
 				<a href="#">
 					<div class="mask">
 						<div class="inner">
 							<hr/>
 						</div>
 					</div>
-					<img src="http://dummyimage.com/600x400/000000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/000000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/ff0000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/ff0000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/000000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/000000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/ff0000/dbdbdb"/>
+					<img src="http://dummyimage.com/400x565/ff0000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/000000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/000000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/ff0000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/ff0000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/000000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/000000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/ff0000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/ff0000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/000000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/000000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/ff0000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/ff0000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/000000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/000000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/ff0000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/ff0000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/000000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/000000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/ff0000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/ff0000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/000000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/000000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/ff0000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/ff0000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/000000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/000000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/ff0000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/ff0000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/000000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/000000/dbdbdb"/>
 				</a>
 			</li><!--
-			--><li>
+			--><li class="item">
 				<a href="#">
-					<img src="http://dummyimage.com/600x400/ff0000/dbdbdb"/>
+					<img src="http://dummyimage.com/565x400/ff0000/dbdbdb"/>
 				</a>
 			</li>
 		</ul>

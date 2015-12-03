@@ -56,16 +56,15 @@ header{
 	}
 }
 
-
 .projects {
 	li{
 		width: 20%;
 		overflow: hidden;
 		display: inline-block;
-		opacity: 0;
 		position: relative;
 		margin: 0px;
 		padding: 0px;
+		
 		vertical-align: top;
 		
 		a{
@@ -76,7 +75,7 @@ header{
 			&:hover{
 				.mask {
 					opacity: 0.7;
-				}
+				} 
 			}
 			
 			.mask{
