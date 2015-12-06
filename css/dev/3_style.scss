@@ -3,15 +3,27 @@ body {
 }
 
 header{
-	height: 90px;
+	height: 130px;
 	
-	&:before{
-		content: "";
-		display: inline-block;
-		vertical-align: middle;
-		height: 100%;
+	
+	@include bpmax(480px){
+		height: 220px;
 	}
-	
+	&.fixed {
+		
+	}
+	.valign {
+		height: 90px;
+		@include bpmax(480px){
+			height: 180px;
+		}
+		&:before{
+			content: "";
+			display: inline-block;
+			vertical-align: middle;
+			height: 100%;
+		}
+	}
 	.logo {
 		display: inline-block;
 		vertical-align: middle;
@@ -37,6 +49,10 @@ header{
 		text-align: right;
 		display: inline-block;
 		width:70%;
+		@include bpmax(1280px){width: 60%;}
+		@include bpmax(480px){
+			width: 50%;
+		}
 		ul {
 			display:inline-block;
 			vertical-align: middle;
@@ -54,6 +70,24 @@ header{
 			}
 		}
 	}
+	
+	.filters {
+		height: 40px;
+		line-height: 40px;
+		background: #ccc;
+		li {
+			display: inline-block;
+			a {
+				height: 100%;
+				display: block;
+				padding: 0px 20px;
+				text-decoration: none;
+				&:hover,&.active {
+					background: #ddd;
+				}
+			}
+		}
+	}
 }
 
 .projects {
@@ -64,9 +98,19 @@ header{
 		position: relative;
 		margin: 0px;
 		padding: 0px;
-		
 		vertical-align: top;
+		z-index:1;
+		@include bpmax(1280px){width: calc(100%/3);}
+		@include bpmax(480px){width: 100%;}
 		
+		&:hover{
+			z-index:2;
+			-moz-box-shadow: 0px 0px 30px 3px #222;
+			-webkit-box-shadow: 0px 0px 30px 3px #222;
+			-o-box-shadow: 0px 0px 30px 3px #222;
+			box-shadow: 0px 0px 30px 3px #222;
+			@include transition(all,0.3s,ease-in-out);
+		}
 		a{
 			display: block;
 			width: 100%;
@@ -75,7 +119,8 @@ header{
 			&:hover{
 				.mask {
 					opacity: 0.7;
-				} 
+				}
+				
 			}
 			
 			.mask{
