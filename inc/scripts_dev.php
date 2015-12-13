@@ -4,4 +4,5 @@
 <script type="text/javascript" src="js/dev/3_isotope.pkgd.min.js"></script>
 <script type="text/javascript" src="js/dev/4_imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="js/dev/5_packery-mode.pkgd.min.js"></script>
-<script type="text/javascript" src="js/dev/6_base.js"></script>
+<script type="text/javascript" src="js/dev/6_featherlight.min.js"></script>
+<script type="text/javascript" src="js/dev/7_base.js"></script>
