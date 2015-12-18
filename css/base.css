@@ -276,7 +276,7 @@ header {
 
 .featherlight {
   top: 130px;
-  cursor: not-allowed; }
+  cursor: url("../img/skin/cursor-cross.ico"), not-allowed; }
   .featherlight:before {
     margin-right: 0px; }
   .featherlight .featherlight-content {
@@ -291,7 +291,7 @@ header {
     max-height: 100%;
     overflow: visible;
     text-align: center;
-    cursor: not-allowed; }
+    cursor: url("../img/skin/cursor-cross.ico"), not-allowed; }
     .featherlight .featherlight-content:before {
       height: 100%;
       display: inline-block;

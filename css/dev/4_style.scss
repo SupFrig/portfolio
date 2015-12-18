@@ -169,7 +169,7 @@ header{
 
 .featherlight {
 	top: $header-desktop-height;
-	cursor: not-allowed;
+	cursor: url('../img/skin/cursor-cross.ico'),not-allowed;
 	&:before {
 		margin-right: 0px;
 	}
@@ -185,7 +185,7 @@ header{
 		max-height: 100%;
 		overflow: visible;
 		text-align: center;
-		cursor: not-allowed;
+		cursor: url('../img/skin/cursor-cross.ico'),not-allowed;
 		&:before {
 			height: 100%;
 			display: inline-block;
