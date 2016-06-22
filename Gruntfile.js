@@ -14,6 +14,10 @@ module.exports = function(grunt) {
       css: {
         files: '**/*.scss',
         tasks: ['sass']
+      },
+      js: {
+        files: 'js/dev/*.js',
+        tasks: ['concat:js']
       }
     },
 	concat: {
@@ -34,9 +38,9 @@ module.exports = function(grunt) {
 	},
     uglify: {
       options: {
-		compress: true,
-		mangle: true,
-		sourceMap: true
+  		compress: true,
+  		mangle: true,
+  		sourceMap: true
 	  },
       build: {
         src: 'js/base.concatenated.js',

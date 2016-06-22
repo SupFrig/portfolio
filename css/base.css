@@ -196,7 +196,7 @@ header {
           header nav.menu ul li a:hover {
             text-decoration: underline; }
   header .filters {
-    height: 40px;
+    min-height: 40px;
     line-height: 40px;
     background: #ccc; }
     header .filters li {
@@ -205,6 +205,7 @@ header {
         height: 100%;
         display: block;
         padding: 0px 20px;
+        color: #111;
         text-decoration: none; }
         header .filters li a:hover, header .filters li a.active {
           background: #ddd; }
@@ -274,46 +275,41 @@ header {
       width: 100%;
       display: block; }
 
-.featherlight {
+.popin-instance {
   top: 130px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2147483647;
+  text-align: center;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.8);
   cursor: url("../img/skin/cursor-cross.ico"), not-allowed; }
-  .featherlight:before {
+  .popin-instance:before {
     margin-right: 0px; }
-  .featherlight .featherlight-content {
-    padding: 0px;
-    margin: 0px;
-    max-height: 100%;
-    height: auto;
-    max-width: 50%;
-    width: auto;
-    vertical-align: middle;
+  .popin-instance:before {
+    height: 100%;
+    display: inline-block;
+    content: '';
+    vertical-align: middle; }
+  .popin-instance .popin-close-icon {
+    right: -51px;
+    line-height: 1em;
+    width: 50px;
     background: transparent;
+    color: #fff;
+    font-size: 3em;
+    position: absolute;
+    display: none; }
+  .popin-instance .popin-inner {
+    height: auto;
     max-height: 100%;
-    overflow: visible;
-    text-align: center;
-    cursor: url("../img/skin/cursor-cross.ico"), not-allowed; }
-    .featherlight .featherlight-content:before {
-      height: 100%;
-      display: inline-block;
-      content: '';
-      vertical-align: middle; }
-    .featherlight .featherlight-content .featherlight-close-icon {
-      right: -51px;
-      line-height: 1em;
-      width: 50px;
-      background: transparent;
-      color: #fff;
-      font-size: 3em;
-      position: absolute;
-      display: none; }
-    .featherlight .featherlight-content .featherlight-inner {
-      height: auto;
-      max-height: 100%;
-      width: auto;
-      max-width: 100%;
-      cursor: zoom-in;
-      vertical-align: middle;
-      display: inline-block;
-      background: #111; }
+    width: auto;
+    max-width: 100%;
+    cursor: zoom-in;
+    vertical-align: middle;
+    display: inline-block;
+    background: #111; }
 
 /*# sourceMappingURL=base.css.map */

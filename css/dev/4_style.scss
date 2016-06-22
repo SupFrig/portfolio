@@ -9,12 +9,12 @@ header{
     z-index: 3;
     width: 100%;
     background: #fff;
-	
+
 	@include bpmax(480px){
 		height: 220px;
 	}
 	&.fixed {
-		
+
 	}
 	.valign {
 		height: 90px;
@@ -33,16 +33,16 @@ header{
 		vertical-align: middle;
 		width:29%;
 		padding-left:1%;
-		
+
 		h1{
 			font-family: $title-font;
 			font-style: italic;
 			font-size: 52px;
-			
+
 			line-height: 52px;
 			display: inline-block;
 		}
-		
+
 		strong{
 			font-family: $text-font;
 			font-size: 18px;
@@ -51,7 +51,7 @@ header{
 			@include transition(all,0.3s,linear);
 		}
 	}
-	
+
 	nav.menu {
 		text-align: right;
 		display: inline-block;
@@ -64,7 +64,7 @@ header{
 			li {
 				display: inline-block;
 				padding: 0%;
-				
+
 				a {
 					color: $text-black;
 					text-decoration: none;
@@ -75,9 +75,9 @@ header{
 			}
 		}
 	}
-	
+
 	.filters {
-		height: 40px;
+		min-height: 40px;
 		line-height: 40px;
 		background: #ccc;
 		li {
@@ -86,6 +86,7 @@ header{
 				height: 100%;
 				display: block;
 				padding: 0px 20px;
+				color: $text-black;
 				text-decoration: none;
 				&:hover,&.active {
 					background: #ddd;
@@ -111,10 +112,10 @@ header{
 		transform:translate3d(0,0,0);
 		-webkit-transform:translate3d(0,0,0);
 		-moz-transform:translate3d(0,0,0);
-  
+
 		@include bpmax(1280px){width: calc(100%/3);}
 		@include bpmax(480px){width: 100%;}
-		
+
 		&:hover{
 			z-index:2;
 			-moz-box-shadow: 0px 0px 30px 3px #222;
@@ -127,14 +128,14 @@ header{
 			display: block;
 			width: 100%;
 			height: 100%;
-			
+
 			&:hover{
 				.mask {
 					opacity: 0.7;
 				}
-				
+
 			}
-			
+
 			.mask{
 				background: #fff;
 				opacity: 0;
@@ -143,13 +144,13 @@ header{
 				width: 100%;
 				height: 100%;
 				color: #000;
-				
+
 				-webkit-transition: opacity 0.5s ease-in;
 				-moz-transition: opacity 0.5s ease-in;
 				-ms-transition: opacity 0.5s ease-in;
 				-o-transition: opacity 0.5s ease-in;
 				transition: opacity 0.5s ease-in;
-				
+
 				.inner{
 					padding: 10%;
 					strong{
@@ -159,7 +160,7 @@ header{
 				}
 			}
 		}
-		
+
 		img{
 			width: 100%;
 			display: block;
@@ -167,52 +168,48 @@ header{
 	}
 }
 
-.featherlight {
+.popin-instance {
 	top: $header-desktop-height;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2147483647;
+	text-align: center;
+	white-space: nowrap;
+	background: rgba(0, 0, 0, 0.8);
 	cursor: url('../img/skin/cursor-cross.ico'),not-allowed;
 	&:before {
 		margin-right: 0px;
 	}
-	.featherlight-content {
-		padding: 0px;
-		margin: 0px;
-		max-height: 100%;
-		height: auto;
-		max-width: 50%;
-		width: auto;
+
+	&:before {
+		height: 100%;
+		display: inline-block;
+		content: '';
 		vertical-align: middle;
-		background: transparent;
-		max-height: 100%;
-		overflow: visible;
-		text-align: center;
-		cursor: url('../img/skin/cursor-cross.ico'),not-allowed;
-		&:before {
-			height: 100%;
-			display: inline-block;
-			content: '';
-			vertical-align: middle;
-		}
-		
-		.featherlight-close-icon {
-			right: -51px;
-			line-height: 1em;
-			width: 50px;
-			background: transparent;
-			color: #fff;
-			font-size: 3em;
-			position: absolute;
-			display: none;
-		}
-		
-		.featherlight-inner {
-			height: auto;
-			max-height: 100%;
-			width: auto;
-			max-width: 100%;
-			cursor: zoom-in;
-			vertical-align: middle;
-			display: inline-block;
-			background: $text-black;
-		}
 	}
+
+	.popin-close-icon {
+		right: -51px;
+		line-height: 1em;
+		width: 50px;
+		background: transparent;
+		color: #fff;
+		font-size: 3em;
+		position: absolute;
+		display: none;
+	}
+
+	.popin-inner {
+		height: auto;
+		max-height: 100%;
+		width: auto;
+		max-width: 100%;
+		cursor: zoom-in;
+		vertical-align: middle;
+		display: inline-block;
+		background: $text-black;
+	}
+
 }
