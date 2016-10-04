@@ -7,18 +7,16 @@
 <?php $is_dev ? include('inc/head_dev.php') : include('inc/head.php'); ?>
 <body>
     <header>
-		<div class="valign">
+		<div class="wrapper">
 			<div class="logo">
-				<h1>Tiens,</h1>
-				<strong>voilà un dessin</strong>
+				<h1>_____</h1>
+				<strong>-&macr;-_-&macr;-_-&macr;-_-&macr;-_</strong>
 			</div><!--
-				--><nav class="menu">
-				<ul>
-					<li><a class="popin" href="#">Porfolio</a></li>
-					<li><a class="popin" href="#">About me</a></li>
-					<li><a class="popin" href="#">Contact</a></li>
-				</ul>
-			</nav>
+			--><div class="disclaimer">
+				<p>Sur ce site, il y a des dessins.<br/>
+				Vous pouvez les regarder, les partager, les colorier (après impression) et les utiliser comme bon vous semble</p>
+				<p>Si vous me laissez un petit merci sur <a href="mailto:herecomedatworm@gmail.com">cette adresse email</a>, c'est plus gentil :)</p>
+			</div>
 		</div>
 		<nav class="filters">
 			<ul>

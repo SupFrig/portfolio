@@ -140,11 +140,8 @@ header {
   z-index: 3;
   width: 100%;
   background: #fff; }
-  @media screen and (max-width: 480px) {
-    header {
-      height: 220px; } }
   header .valign {
-    height: 90px; }
+    height: auto; }
     @media screen and (max-width: 480px) {
       header .valign {
         height: 180px; } }
@@ -153,31 +150,57 @@ header {
       display: inline-block;
       vertical-align: middle;
       height: 100%; }
+  header .wrapper {
+    background: #fff; }
   header .logo {
     display: inline-block;
-    vertical-align: middle;
-    width: 29%;
-    padding-left: 1%; }
+    vertical-align: top;
+    width: 159px;
+    height: 100%;
+    float: left; }
+    @media screen and (max-width: 520px) {
+      header .logo {
+        display: block;
+        margin: 0 3% 3% 0;
+        line-height: 15px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 2px solid #333; } }
     header .logo h1 {
-      font-family: "Cookie", arial;
+      font-family: monospace;
       font-style: italic;
       font-size: 52px;
       line-height: 52px;
       display: inline-block; }
     header .logo strong {
-      font-family: Raleway, arial;
+      font-family: monospace;
       font-size: 18px;
       line-height: 18px;
       display: block;
+      margin-top: 8px;
       -webkit-transition: all 0.3s linear;
       -moz-transition: all 0.3s linear;
       -ms-transition: all 0.3s linear;
       -o-transition: all 0.3s linear;
       transition: all 0.3s linear; }
+  header .disclaimer {
+    display: inline-block;
+    height: auto;
+    vertical-align: top;
+    padding: 15px;
+    max-width: 62%;
+    border-left: 2px solid #333; }
+    @media screen and (max-width: 520px) {
+      header .disclaimer {
+        display: none;
+        border-left: 0px;
+        text-align: center; } }
+    header .disclaimer p {
+      padding-bottom: 8px; }
   header nav.menu {
     text-align: right;
     display: inline-block;
-    width: 68%; }
+    width: 58%; }
     @media screen and (max-width: 1280px) {
       header nav.menu {
         width: 60%; } }
@@ -198,7 +221,9 @@ header {
   header .filters {
     min-height: 40px;
     line-height: 40px;
-    background: #ccc; }
+    background: #fff;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333; }
     header .filters li {
       display: inline-block; }
       header .filters li a {

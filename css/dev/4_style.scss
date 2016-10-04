@@ -10,14 +10,11 @@ header{
     width: 100%;
     background: #fff;
 
-	@include bpmax(480px){
-		height: 220px;
-	}
 	&.fixed {
 
 	}
 	.valign {
-		height: 90px;
+		height: auto;
 		@include bpmax(480px){
 			height: 180px;
 		}
@@ -28,14 +25,29 @@ header{
 			height: 100%;
 		}
 	}
+
+	.wrapper {
+		background: #fff;
+	}
+
 	.logo {
 		display: inline-block;
-		vertical-align: middle;
-		width:29%;
-		padding-left:1%;
+		vertical-align: top;
+		width: 159px;
+		height: 100%;
+		float: left;
+
+		@include bpmax(520px){
+			display:block;
+			margin: 0 3% 3% 0;
+		    line-height: 15px;
+		    width: 100%;
+		    text-align: center;
+		    border-bottom: 2px solid #333;
+		}
 
 		h1{
-			font-family: $title-font;
+			font-family: monospace;
 			font-style: italic;
 			font-size: 52px;
 
@@ -44,18 +56,37 @@ header{
 		}
 
 		strong{
-			font-family: $text-font;
+			font-family: monospace;
 			font-size: 18px;
 			line-height: 18px;
 			display: block;
+			margin-top: 8px;
 			@include transition(all,0.3s,linear);
 		}
 	}
 
+	.disclaimer {
+		display: inline-block;
+	    height: auto;
+	    vertical-align: top;
+	    padding: 15px;
+	    max-width: 62%;
+	    border-left: 2px solid #333;
+
+	    @include bpmax(520px){
+			display:none;
+			border-left: 0px;
+			text-align: center;
+		}
+
+		p {
+			padding-bottom: 8px;
+		}
+	}
 	nav.menu {
 		text-align: right;
 		display: inline-block;
-		width:68%;
+		width:58%;
 		@include bpmax(1280px){width: 60%;}
 		@include bpmax(480px){width: 50%;}
 		ul {
@@ -79,7 +110,9 @@ header{
 	.filters {
 		min-height: 40px;
 		line-height: 40px;
-		background: #ccc;
+		background: #fff;
+		border-top: 2px solid #333;
+		border-bottom: 2px solid #333;
 		li {
 			display: inline-block;
 			a {
@@ -99,6 +132,7 @@ header{
 .projects {
 	padding-top: $header-desktop-height;
 	opacity:0;
+
 	@include transition(all,0.3s,linear);
 	li{
 		width: 20%;
